@@ -1,16 +1,36 @@
-# This is a sample Python script.
+'''
+*
+**
+***
+****
+'''
+def f(size):
+    for i in range(1,size+1):
+        print(i*"*")
+f(4)
+f(7)
+f(6)
+'''
+5
+*****
+*   *
+*   *
+*   *
+*****
+'''
+def f(size):
+    if size <= 0:
+        return
+    if size == 1:
+        print("#")
+        return
+    print((size  )*'#')
+    for _ in range(size -2 ):
+        print((size -2)* '#')* " "+ "*"
+    print(size *'#')
+print('_')
+f(0)
+f(1)
+f(2)
+f(4)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
